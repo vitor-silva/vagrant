@@ -7,3 +7,9 @@ vagrant init mynewbox
 
 ## plugins
 https://github.com/dotless-de/vagrant-vbguest
+
+### snapshot
+vagrant plugin install vagrant-vbox-snapshot
+vagrant snapshot take good-snap
+vagrant snapshot back (reload the last snapshot)
+vagrant snapshot go good-snap (use the named snapshot)
